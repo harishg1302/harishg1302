@@ -38,23 +38,23 @@ public class Application1 extends Application {
     @Override
     public void start(Stage stage) {
         //Creating Label1
-        Label label1 = new Label("  " + item1 + " (500 $)      ");
+        Label label1 = new Label("    " + item1 + " (500 $)      ");
         label1.contains(20, 20);
         Spinner<Integer> spinnerOne = new Spinner<Integer>(0, 20, 0);
 
         //Creating Label2
-        Label label2 = new Label("  " + item2 + "   (200 $)        ");
+        Label label2 = new Label("    " + item2 + "   (200 $)        ");
         label2.contains(200, 20);
         Spinner<Integer> spinner2 = new Spinner<Integer>(0, 20, 0);
 
         //Creating Label3
-        Label label3 = new Label("  " + item3 + "   (250 $)   ");
+        Label label3 = new Label("    " + item3 + "   (250 $)   ");
         label3.contains(300, 20);
         Spinner<Integer> spinner3 = new Spinner<Integer>(0, 20, 0);
 
 
         //Creating Label4
-        Label label4 = new Label("  " + item4 + "  (150 $)        ");
+        Label label4 = new Label("   " + item4 + "  (150 $)        ");
         label4.contains(500, 20);
         Spinner<Integer> spinner4 = new Spinner<Integer>(0, 20, 0);
 
@@ -88,22 +88,22 @@ public class Application1 extends Application {
                 secondaryLayout.setVgap(2);
 
                 if (noOfItem1 != 0) {
-                    Label num_of_itm1 = new Label(String.valueOf(noOfItem1) + "x " + item1 + "                     $" + noOfItem1 * priceItem1);
+                    Label num_of_itm1 = new Label(String.valueOf(noOfItem1) + "x " + item1 + "  $" + noOfItem1 * priceItem1);
                     num_of_itm1.setFont(new Font("Arial", 15));
                     secondaryLayout.add(num_of_itm1, 2, 5);
                 }
                 if (noOfItem2 != 0) {
-                    Label num_of_itm2 = new Label(String.valueOf(noOfItem2) + "x " + item2 + "                   $" + noOfItem2 * priceItem2);
+                    Label num_of_itm2 = new Label(String.valueOf(noOfItem2) + "x " + item2 + "   $" + noOfItem2 * priceItem2);
                     num_of_itm2.setFont(new Font("Arial", 15));
                     secondaryLayout.add(num_of_itm2, 2, 10);
                 }
                 if (noOfItem3 != 0) {
-                    Label num_of_itm3 = new Label(String.valueOf(noOfItem3) + "x  " + item3 + "                        $" + noOfItem3 * priceItem3);
+                    Label num_of_itm3 = new Label(String.valueOf(noOfItem3) + "x  " + item3 + "   $" + noOfItem3 * priceItem3);
                     num_of_itm3.setFont(new Font("Arial", 15));
                     secondaryLayout.add(num_of_itm3, 2, 15);
                 }
                 if (noOfItem4 != 0) {
-                    Label num_of_spl = new Label(String.valueOf(noOfItem4) + "x " + item4 + "                   $" + noOfItem4 * priceItem4);
+                    Label num_of_spl = new Label(String.valueOf(noOfItem4) + "x " + item4 + "      $" + noOfItem4 * priceItem4);
                     num_of_spl.setFont(new Font("Arial", 15));
                     secondaryLayout.add(num_of_spl, 2, 20);
                 }
@@ -112,7 +112,7 @@ public class Application1 extends Application {
                     display.setFont(new Font("Arial", 20));
                     secondaryLayout.add(display, 2, 25);
                 } else {
-                    Label total = new Label("Total :                           $" + ((noOfItem1 * priceItem1) + (noOfItem2 * priceItem2) + (noOfItem3 * priceItem3) + (noOfItem4 * priceItem4)));
+                    Label total = new Label("Total :                    $" + ((noOfItem1 * priceItem1) + (noOfItem2 * priceItem2) + (noOfItem3 * priceItem3) + (noOfItem4 * priceItem4)));
                     total.setFont(new Font("Arial", 20));
                     secondaryLayout.add(total, 2, 25);
                 }
